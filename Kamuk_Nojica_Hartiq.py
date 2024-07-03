@@ -4,6 +4,7 @@ from re import A
 rock = "Rock"
 paper = "Paper"
 scissors = "Scissors"
+while True:
 p_move = input("Choose, [r]ock,[p]aper or [s]cissors: ")
 
 if p_move == "r":
@@ -13,7 +14,8 @@ elif p_move == "p":
 elif p_move == "s":
     p_move = scissors
 else :
-    raise SystemExit("Invalid input. Try again...")
+    print("Invalid input. Try again...")
+    continue
 
 ai_move = ""
 
@@ -35,3 +37,6 @@ elif (p_move == rock and ai_move == rock) or (p_move == paper and ai_move == pap
     print("Draw!")
 elif(p_move == rock and ai_move == paper) or (p_move == paper and ai_move == scissors) or (p_move == scissors and ai_move == rock):
     print("You lose!")
+if play_again == "no"
+    print("Thanks for playing!")
+    break
