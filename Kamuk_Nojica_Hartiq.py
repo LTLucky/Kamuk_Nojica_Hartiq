@@ -37,6 +37,6 @@ elif (p_move == rock and ai_move == rock) or (p_move == paper and ai_move == pap
     print("Draw!")
 elif(p_move == rock and ai_move == paper) or (p_move == paper and ai_move == scissors) or (p_move == scissors and ai_move == rock):
     print("You lose!")
-if play_again == "no"
+if play_again == "no":
     print("Thanks for playing!")
     break
