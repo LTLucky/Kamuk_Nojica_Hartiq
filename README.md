@@ -5,4 +5,6 @@ This game is just for fun and its not meant to solve a problem!
 #Solution
 In this code we use different operators, as if-else, while cycle, comands continue and break ect.
 #screan shot
+![image](https://github.com/LTLucky/Kamuk_Nojica_Hartiq/assets/174585414/0bdd2a8b-b42a-4540-8395-adbd29d21cfa)
+
 
