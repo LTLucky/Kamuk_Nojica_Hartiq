@@ -30,3 +30,6 @@ def calculator():
             result = num1 / num2
         print(f"Резултат: {num1} {operation} {num2} = {result}")
 calculator()
+# Live Demo
+https://replit.com/join/auoiycjxsu-presko1306
+
