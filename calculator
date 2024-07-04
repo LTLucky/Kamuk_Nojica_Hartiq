@@ -1,0 +1,32 @@
+# Calculator 
+def calculator():
+    print("Добре дошли в kalkulatora") 
+    print("move da vurshte slednite operacii (+,-,*,/)")      
+    result = 0
+    
+    while True:
+        operation = input("изберете операция или (изход)").strip()
+
+        if operation == "изход":
+            print("излизане от калкулатора")
+            break
+        if operation not in['+','-','*','/']:
+            print("невалидна операция. Опитаите отново.")
+            continue
+
+        num1 = float(input("Въведете първо чхисло:"))
+        num2 = float(input("Въведете вроро чхисло:"))
+
+        if operation == '+':
+            result = num1 + num2
+        elif operation == '-':
+            result = num1 - num2
+        elif operation == '*':
+            result = num1 * num2
+        elif operation == '/':
+            if num2 == 0:
+                print("Не може да се дели на 0. Опитаите отново.")
+                continue
+            result = num1 / num2
+        print(f"Резултат: {num1} {operation} {num2} = {result}")
+calculator()
