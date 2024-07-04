@@ -1,0 +1,23 @@
+# Code
+import random
+
+print("Добре дошли в играта 'Познай числото'1' ")
+guess_to_number = random.randint(1,100)
+attempts = 0        
+
+while True:
+    guess = int(input("Моля, въведете число между 1 и 100: "))
+
+    attempts += 1
+
+    if guess <1 or guess>100:
+        print("Моля въведете число в диапазона 1-100")
+    elif guess < guess_to_number:
+        print("Моля въведете по-голямо число.")
+    elif guess > guess_to_number:
+        print("Моля въведете по-малко число.")
+    else:
+        print(f"Поздравления! Познахте числото {guess_to_number} за {attempts} опита.")
+        break
+# Live Demo
+https://replit.com/join/bhqomvfhvk-presko1306
